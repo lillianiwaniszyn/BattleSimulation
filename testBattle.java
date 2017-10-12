@@ -32,7 +32,18 @@ public class testBattle {
 				bat.calculateWinner(hero, vil).equals("win") || bat.calculateWinner(hero, vil).equals("lose"));
 		assertTrue(bat.calculateWinner(hero1, vil1).equals("draw") );
 	}
-
+	@Test
+	public void testBattleAgain() {
+		assertTrue(bat.battleAgain(1));
+		assertFalse(bat.battleAgain(2));
+		
+	}
+	@Test (expected = IllegalArgumentException.class)
+	public void testWrongArgumentsBA() {
+		bat.battleAgain(4);
+		bat.battleAgain(0);
+		bat.battleAgain(-20);
+	}
 
 	
 
