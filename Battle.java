@@ -1,14 +1,10 @@
 package a1;
 
-import java.security.InvalidParameterException;
 import java.util.Random;
-import java.util.Scanner;
 
 public class Battle {
 
 Random battle = new Random();
-Scanner input = new Scanner(System.in);
-int restart;
 
 int heroHealth, villainHealth;
 int outcome, outcome1, outcome2, outcome3;
@@ -106,23 +102,14 @@ public String calculateWinner(Hero hero, Villain vil){
                 return "draw";}
 			return null;
                 }
-public boolean battleAgain() throws InvalidParameterException{
-    System.out.println("");
-    System.out.println("Fight again?");
-    System.out.println("1 for Yes");
-    System.out.println("2 for No");
-    restart = input.nextInt();
+public boolean battleAgain(int restart) throws IllegalArgumentException{
     if(restart == 1){
         System.out.println("");
         return true;
     }else if(restart == 2){
         System.out.println("Thank you for playing!");
         return false;
-       }
-    else throw new InvalidParameterException("invalid choice") ;
-        
-        
-        
 }
-
+	throw new IllegalArgumentException ("wrong value chosen");
                 }
+}
