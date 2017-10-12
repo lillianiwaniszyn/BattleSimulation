@@ -1,14 +1,11 @@
 package a1;
 
-public class Hero {
-    int attack;
-    int defense;
-    int health;
+public class Hero extends Player{
 
 	public Hero(int attack, int defense, int health){
-		this.attack = attack;
-		this.defense = defense;
-		this.health = health;
+		super.attack = attack;
+		super.defense = defense;
+		super.health = health;
 		
 		
 	}
