@@ -81,7 +81,7 @@ public static void main(String[] args) {
             System.out.println("1 for Yes");
             System.out.println("2 for No");
             restart = input.nextInt();
-            if(bat.battleAgain(restart))
+            if(bat.battleAgain(restart)== false)
                 break;
                 }
                 }
@@ -120,7 +120,7 @@ public static void main(String[] args) {
             System.out.println("1 for Yes");
             System.out.println("2 for No");
             restart = input.nextInt();
-            if(bat.battleAgain(restart))
+            if(bat.battleAgain(restart)== false)
                 break;
                 }
                 }
@@ -159,7 +159,7 @@ public static void main(String[] args) {
             System.out.println("1 for Yes");
             System.out.println("2 for No");
             restart = input.nextInt();
-            if(bat.battleAgain(restart))
+            if(bat.battleAgain(restart)== false)
                 break;
                 }
                 }
@@ -198,7 +198,7 @@ public static void main(String[] args) {
             System.out.println("1 for Yes");
             System.out.println("2 for No");
             restart = input.nextInt();
-            if(bat.battleAgain(restart))
+            if(bat.battleAgain(restart)== false)
                 break;
                 }
                 }
@@ -237,7 +237,7 @@ public static void main(String[] args) {
             System.out.println("1 for Yes");
             System.out.println("2 for No");
             restart = input.nextInt();
-            if(bat.battleAgain(restart))
+            if(bat.battleAgain(restart)== false)
                 break;
                 }
                 }
@@ -276,7 +276,7 @@ public static void main(String[] args) {
             System.out.println("1 for Yes");
             System.out.println("2 for No");
             restart = input.nextInt();
-            if(bat.battleAgain(restart)== false)
+            if(bat.battleAgain(restart)== false) 
                 break;
                 }
                 }
