@@ -9,7 +9,7 @@ Random battle = new Random();
 int heroHealth, villainHealth;
 int outcome, outcome1, outcome2, outcome3;
 
-void calculateWinner(Hero hero, Villain vil){
+public String calculateWinner(Hero hero, Villain vil){
     do{ outcome = hero.attack - vil.defense;
         villainHealth = vil.health - outcome;
         System.out.println("Your attack does " + outcome + " damage!");
@@ -92,10 +92,14 @@ void calculateWinner(Hero hero, Villain vil){
                         }
             }while(villainHealth > 0 && heroHealth > 0);
             if(villainHealth <= 0 && heroHealth > 0){
-                System.out.println("You win!");}
+                System.out.println("You win!");
+                return "win";}
             if(heroHealth <= 0 && villainHealth > 0){
-                System.out.println("You lose!");}
-            if(heroHealth <= 0 && villainHealth <= 0){
-                System.out.println("Draw!");}
+                System.out.println("You lose!");
+                return "lose";}
+            if(heroHealth <=0 && villainHealth <= 0){
+                System.out.println("Draw!");
+                return "draw";}
+			return null;
                 }
                 }
