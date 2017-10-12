@@ -76,16 +76,7 @@ public static void main(String[] args) {
                 System.out.println("");
                 yusefVillain =  new Villain(13,2,10);
                 bat.calculateWinner(valon, yusefVillain);}
-            System.out.println("");
-            System.out.println("Fight again?");
-            System.out.println("1 for Yes");
-            System.out.println("2 for No");
-            restart = input.nextInt();
-            if(restart == 1){
-                System.out.println("");
-            }else if(restart == 2){
-                System.out.println("Thank you for playing!");
-                break;}
+            if (bat.battleAgain() == false) break;
                 }
                 }
         if(hero == 2){System.out.println("You have chosen Rintar!");
@@ -118,16 +109,7 @@ public static void main(String[] args) {
                 System.out.println("");
                 yusefVillain =  new Villain(13,2,10);
                 bat.calculateWinner(rintar, yusefVillain);}
-            System.out.println("");
-            System.out.println("Fight again?");
-            System.out.println("1 for Yes");
-            System.out.println("2 for No");
-            restart = input.nextInt();
-            if(restart == 1){
-                System.out.println("");
-            }else if(restart == 2){
-                System.out.println("Thank you for playing!");
-                break;}
+            if (bat.battleAgain() == false) break;
                 }
                 }
         if(hero == 3){System.out.println("You have chosen Prince Zersious!");
@@ -160,16 +142,7 @@ public static void main(String[] args) {
                 System.out.println("");
                 yusefVillain =  new Villain(13,2,10);
                 bat.calculateWinner(zersious, yusefVillain);}
-            System.out.println("");
-            System.out.println("Fight again?");
-            System.out.println("1 for Yes");
-            System.out.println("2 for No");
-            restart = input.nextInt();
-            if(restart == 1){
-                System.out.println("");
-            }else if(restart == 2){
-                System.out.println("Thank you for playing!");
-                break;}
+            if (bat.battleAgain() == false) break;
                 }
                 }
         if(hero == 4){System.out.println("You have chosen Balrock!");
@@ -202,16 +175,7 @@ public static void main(String[] args) {
                 System.out.println("");
                 yusefVillain =  new Villain(13,2,10);
                 bat.calculateWinner(balrock, yusefVillain);}
-            System.out.println("");
-            System.out.println("Fight again?");
-            System.out.println("1 for Yes");
-            System.out.println("2 for No");
-            restart = input.nextInt();
-            if(restart == 1){
-                System.out.println("");
-            }else if(restart == 2){
-                System.out.println("Thank you for playing!");
-                break;}
+            if (bat.battleAgain() == false) break;
                 }
                 }
         if(hero == 5){System.out.println("You have chosen Hawkeye!");
@@ -244,16 +208,7 @@ public static void main(String[] args) {
                 System.out.println("");
                 yusefVillain =  new Villain(13,2,10);
                 bat.calculateWinner(hawkeye, yusefVillain);}
-            System.out.println("");
-            System.out.println("Fight again?");
-            System.out.println("1 for Yes");
-            System.out.println("2 for No");
-            restart = input.nextInt();
-            if(restart == 1){
-                System.out.println("");
-            }else if(restart == 2){
-                System.out.println("Thank you for playing!");
-                break;}
+            if (bat.battleAgain() == false) break;
                 }
                 }
         if(hero == 6){System.out.println("You have chosen Yusef!");
@@ -285,17 +240,8 @@ public static void main(String[] args) {
                 System.out.println("Hawkeye!");
                 System.out.println("");
                 hawkeyeVillain = new Villain(7,1,17);
-                bat.calculateWinner(yusef, hawkeyeVillain);}
-            System.out.println("");
-            System.out.println("Fight again?");
-            System.out.println("1 for Yes");
-            System.out.println("2 for No");
-            restart = input.nextInt();
-            if(restart == 1){
-                System.out.println("");
-            }else if(restart == 2){
-                System.out.println("Thank you for playing!");
-                break;}
+                bat.calculateWinner(yusef, hawkeyeVillain);}      
+               if (bat.battleAgain() == false) break;
                 }
                 }
                 }
