@@ -24,69 +24,13 @@ public String calculateWinner(Hero hero, Villain vil){
         System.out.println("Your Health");
         System.out.println(heroHealth);
         if(villainHealth > 0 && heroHealth > 0){
-            outcome = hero.attack - vil.defense;
-            outcome1 = 2 * outcome;
-            villainHealth = vil.health - outcome1;
-            System.out.println("Your attack does " + outcome + " damage!");
-            System.out.println("");
-            System.out.println("Enemy Health");
-            System.out.println(villainHealth);
-            outcome = vil.attack - hero.defense;
-            outcome1 = 2 * outcome;
-            heroHealth = hero.health - outcome1;
-            System.out.println("");
-            System.out.println("Enemies attack does " + outcome2 + " damage!");
-            System.out.println("");
-            System.out.println("Your Health");
-            System.out.println(heroHealth);
+        	function1(2, hero,vil);
             if(villainHealth > 0 && heroHealth > 0){
-                outcome = hero.attack - vil.defense;
-                outcome1 = 3 * outcome;
-                villainHealth = vil.health - outcome1;
-                System.out.println("Your attack does " + outcome + " damage!");
-                System.out.println("");
-                System.out.println("Enemy Health");
-                System.out.println(villainHealth);
-                outcome = vil.attack - hero.defense;
-                outcome1 = 3 * outcome;
-                heroHealth = hero.health - outcome1;
-                System.out.println("");
-                System.out.println("Enemies attack does " + outcome2 + " damage!");
-                System.out.println("");
-                System.out.println("Your Health");
-                System.out.println(heroHealth);
+            	function1(3, hero,vil);
                 if(villainHealth > 0 && heroHealth > 0){
-                    outcome = hero.attack - vil.defense;
-                    outcome1 = 4 * outcome;
-                    villainHealth = vil.health - outcome1;
-                    System.out.println("Your attack does " + outcome + " damage!");
-                    System.out.println("");
-                    System.out.println("Enemy Health");
-                    System.out.println(villainHealth);
-                    outcome = vil.attack - hero.defense;
-                    outcome1 = 4 * outcome;
-                    heroHealth = hero.health - outcome1;
-                    System.out.println("");
-                    System.out.println("Enemies attack does " + outcome2 + " damage!");
-                    System.out.println("");
-                    System.out.println("Your Health");
-                    System.out.println(heroHealth);
+                	function1(4, hero,vil);
                         if(villainHealth > 0 && heroHealth > 0){
-                        outcome = hero.attack - vil.defense;
-                        outcome1 = 5 * outcome;
-                        villainHealth = vil.health - outcome1;
-                        System.out.println("Your attack does " + outcome + " damage!");
-                        System.out.println("");
-                        System.out.println("Enemy Health");
-                        System.out.println(villainHealth);
-                        outcome = vil.attack - hero.defense;
-                        outcome1 = 5 * outcome;
-                        heroHealth = hero.health - outcome1;
-                        System.out.println("");
-                        System.out.println("Enemies attack does " + outcome2 + " damage!");
-                        System.out.println("");
-                        System.out.println("Your Health");
-                        System.out.println(heroHealth);}
+                        	function1(5, hero,vil);}
                         }
                         }
                         }
@@ -112,4 +56,23 @@ public boolean battleAgain(int restart) throws IllegalArgumentException{
 }
 	throw new IllegalArgumentException ("wrong value chosen");
                 }
+public int function1(int multiplier, Hero hero, Villain vil) {
+    outcome = hero.attack - vil.defense;
+    outcome1 = multiplier * outcome;
+    villainHealth = vil.health - outcome1;
+    System.out.println("Your attack does " + outcome + " damage!");
+    System.out.println("");
+    System.out.println("Enemy Health");
+    System.out.println(villainHealth);
+    outcome = vil.attack - hero.defense;
+    outcome1 = multiplier * outcome;
+    heroHealth = hero.health - outcome1;
+    System.out.println("");
+    System.out.println("Enemies attack does " + outcome2 + " damage!");
+    System.out.println("");
+    System.out.println("Your Health");
+    System.out.println(heroHealth);
+    return heroHealth;
+	
+}
 }
