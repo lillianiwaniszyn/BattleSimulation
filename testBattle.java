@@ -45,13 +45,13 @@ public class testBattle {
 		bat.battleAgain(-20);
 	}
 	@Test
-	public void testfunction1() {
-		assertTrue(bat.function1(5, hero, vil) <20 ); 
-		assertTrue(bat.function1(5, hero, vil) >-25 ); 
-		assertTrue(bat.function1(2, hero1, vil1) <20 ); 
-		assertTrue(bat.function1(2, hero1, vil1) >-25 ); 
-		assertTrue(bat.function1(3, hero1, vil1) <20 ); 
-		assertTrue(bat.function1(3, hero1, vil1) >-25 ); 
+	public void testcontinueFight() {
+		assertTrue(bat.continueFight(5, hero, vil) <20 ); 
+		assertTrue(bat.continueFight(5, hero, vil) >-25 ); 
+		assertTrue(bat.continueFight(2, hero1, vil1) <20 ); 
+		assertTrue(bat.continueFight(2, hero1, vil1) >-25 ); 
+		assertTrue(bat.continueFight(3, hero1, vil1) <20 ); 
+		assertTrue(bat.continueFight(3, hero1, vil1) >-25 ); 
 	}
 
 	
