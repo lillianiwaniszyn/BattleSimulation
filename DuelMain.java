@@ -11,37 +11,21 @@ public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
 
     int hero, match, restart;
+    Battle bat = new Battle();
+    Hero valon = new Hero(6,0,19);
+    Hero rintar = new Hero(8,1,16);
+    Hero zersious = new Hero(5,2,18);
+    Hero balrock = new Hero(10,0,15);
+    Hero hawkeye = new Hero(7,1,17);
+    Hero yusef = new Hero(13,2,10);
+    Villain valonVillain;
+    Villain rintarVillain;
+    Villain zersiousVillain;
+    Villain balrockVillain;
+    Villain hawkeyeVillain;
+    Villain yusefVillain;
+    
 
-    Battle valon = new Battle();
-    Battle rintar = new Battle();
-    Battle zersious = new Battle();
-    Battle balrock = new Battle();
-    Battle hawkeye = new Battle();
-    Battle yusef = new Battle();
-
-    valon.attack = 6;
-    valon.defense = 0;
-    valon.health = 19;
-
-    rintar.attack = 8;
-    rintar.defense = 1;
-    rintar.health = 16;
-
-    zersious.attack = 5;
-    zersious.defense = 2;
-    zersious.health = 18;
-
-    balrock.attack = 10;
-    balrock.defense =0;
-    balrock.health = 15;
-
-    hawkeye.attack = 7;
-    hawkeye.defense = 1;
-    hawkeye.health = 17;
-
-    yusef.attack = 13;
-    yusef.defense = 2;
-    yusef.health = 10;
 
 
         System.out.println("Choose your HERO");
@@ -70,38 +54,28 @@ public static void main(String[] args) {
             if(match == 1){
                 System.out.println("Rintar!");
                 System.out.println("");
-                valon.attack1 = 8;
-                valon.defense1 = 1;
-                valon.health1 = 16;
-                valon.calculateWinner();
+                rintarVillain = new Villain(8,1,16);
+                bat.calculateWinner(valon, rintarVillain);
             }else if(match == 2){
                 System.out.println("Prince Zersious!");
                 System.out.println("");
-                valon.attack1 = 5;
-                valon.defense1 = 2;
-                valon.health1 = 18;
-                valon.calculateWinner();
+                zersiousVillain = new Villain(5,2,18);
+                bat.calculateWinner(valon, zersiousVillain);
             }else if(match == 3){
                 System.out.println("Balrock!");
                 System.out.println("");
-                valon.attack1 = 10;
-                valon.defense1 = 0;
-                valon.health1 = 15;
-                valon.calculateWinner();
+                balrockVillain = new Villain(10,0,15);
+                bat.calculateWinner(valon, balrockVillain);
             }else if(match == 4){
                 System.out.println("Hawkeye!");
                 System.out.println("");
-                valon.attack1 = 7;
-                valon.defense1 = 1;
-                valon.health1 = 17;
-                valon.calculateWinner();
+                hawkeyeVillain = new Villain(7,1,17);
+                bat.calculateWinner(valon, hawkeyeVillain);
             }else if(match == 5){
                 System.out.println("Yusef!");
                 System.out.println("");
-                valon.attack1 = 13;
-                valon.defense1 = 2;
-                valon.health1 = 10;
-                valon.calculateWinner();}
+                yusefVillain =  new Villain(13,2,10);
+                bat.calculateWinner(valon, yusefVillain);}
             System.out.println("");
             System.out.println("Fight again?");
             System.out.println("1 for Yes");
@@ -122,38 +96,28 @@ public static void main(String[] args) {
             if(match == 1){
                 System.out.println("Lord Valon!");
                 System.out.println("");
-                rintar.attack1 = 6;
-                rintar.defense1 = 0;
-                rintar.health1 = 19;
-                rintar.calculateWinner();
+                valonVillain =  new Villain(6,0,19);
+                bat.calculateWinner(rintar, valonVillain);
             }else if(match == 2){
                 System.out.println("Prince Zersious!");
                 System.out.println("");
-                rintar.attack1 = 5;
-                rintar.defense1 = 2;
-                rintar.health1 = 18;
-                rintar.calculateWinner();
+                zersiousVillain = new Villain(5,2,18);
+                bat.calculateWinner(rintar, zersiousVillain);
             }else if(match == 3){
                 System.out.println("Balrock!");
                 System.out.println("");
-                rintar.attack1 = 10;
-                rintar.defense1 = 0;
-                rintar.health1 = 15;
-                rintar.calculateWinner();
+                balrockVillain = new Villain(10,0,15);
+                bat.calculateWinner(rintar, balrockVillain);
             }else if(match == 4){
                 System.out.println("Hawkeye!");
                 System.out.println("");
-                rintar.attack1 = 7;
-                rintar.defense1 = 1;
-                rintar.health1 = 17;
-                rintar.calculateWinner();
+                hawkeyeVillain = new Villain(7,1,17);
+                bat.calculateWinner(rintar, hawkeyeVillain);
             }else if(match == 5){
                 System.out.println("Yusef!");
                 System.out.println("");
-                rintar.attack1 = 13;
-                rintar.defense1 = 2;
-                rintar.health1 = 10;
-                rintar.calculateWinner();}
+                yusefVillain =  new Villain(13,2,10);
+                bat.calculateWinner(rintar, yusefVillain);}
             System.out.println("");
             System.out.println("Fight again?");
             System.out.println("1 for Yes");
@@ -174,38 +138,28 @@ public static void main(String[] args) {
             if(match == 1){
                 System.out.println("Lord Valon!");
                 System.out.println("");
-                zersious.attack1 = 6;
-                zersious.defense1 = 0;
-                zersious.health1 = 19;
-                zersious.calculateWinner();
+                valonVillain =  new Villain(6,0,19);
+                bat.calculateWinner(zersious, valonVillain);
             }else if(match == 2){
                 System.out.println("Rintar!");
                 System.out.println("");
-                zersious.attack1 = 8;
-                zersious.defense1 = 1;
-                zersious.health1 = 16;
-                zersious.calculateWinner();
+                rintarVillain = new Villain(8,1,16);
+                bat.calculateWinner(zersious, rintarVillain);
             }else if(match == 3){
                 System.out.println("Balrock!");
                 System.out.println("");
-                zersious.attack1 = 10;
-                zersious.defense1 = 0;
-                zersious.health1 = 15;
-                zersious.calculateWinner();
+                balrockVillain = new Villain(10,0,15);
+                bat.calculateWinner(zersious, balrockVillain);
             }else if(match == 4){
                 System.out.println("Hawkeye!");
                 System.out.println("");
-                zersious.attack1 = 7;
-                zersious.defense1 = 1;
-                zersious.health1 = 17;
-                zersious.calculateWinner();
+                hawkeyeVillain = new Villain(7,1,17);
+                bat.calculateWinner(zersious, hawkeyeVillain);
             }else if(match == 5){
                 System.out.println("Yusef!");
                 System.out.println("");
-                zersious.attack1 = 13;
-                zersious.defense1 = 2;
-                zersious.health1 = 10;
-                zersious.calculateWinner();}
+                yusefVillain =  new Villain(13,2,10);
+                bat.calculateWinner(zersious, yusefVillain);}
             System.out.println("");
             System.out.println("Fight again?");
             System.out.println("1 for Yes");
@@ -226,38 +180,28 @@ public static void main(String[] args) {
             if(match == 1){
                 System.out.println("Lord Valon!");
                 System.out.println("");
-                balrock.attack1 = 6;
-                balrock.defense1 =0;
-                balrock.health1 = 19;
-                balrock.calculateWinner();
+                valonVillain =  new Villain(6,0,19);
+                bat.calculateWinner(balrock, valonVillain);
             }else if(match == 2){
                 System.out.println("Prince Zersious!");
                 System.out.println("");
-                balrock.attack1 = 5;
-                balrock.defense1 =2;
-                balrock.health1 = 18;
-                balrock.calculateWinner();
+                zersiousVillain = new Villain(5,2,18);
+                bat.calculateWinner(balrock, zersiousVillain);
             }else if(match == 3){
                 System.out.println("Rintar!");
                 System.out.println("");
-                balrock.attack1 = 8;
-                balrock.defense1 =1;
-                balrock.health1 = 16;
-                balrock.calculateWinner();
+                rintarVillain = new Villain(8,1,16);
+                bat.calculateWinner(balrock, rintarVillain);
             }else if(match == 4){
                 System.out.println("Hawkeye!");
                 System.out.println("");
-                balrock.attack1 = 7;
-                balrock.defense1 =1;
-                balrock.health1 = 17;
-                balrock.calculateWinner();
+                hawkeyeVillain = new Villain(7,1,17);
+                bat.calculateWinner(balrock, hawkeyeVillain);
             }else if(match == 5){
                 System.out.println("Yusef!");
                 System.out.println("");
-                balrock.attack1 = 13;
-                balrock.defense1 =2;
-                balrock.health1 = 10;
-                balrock.calculateWinner();}
+                yusefVillain =  new Villain(13,2,10);
+                bat.calculateWinner(balrock, yusefVillain);}
             System.out.println("");
             System.out.println("Fight again?");
             System.out.println("1 for Yes");
@@ -278,38 +222,28 @@ public static void main(String[] args) {
             if(match == 1){
                 System.out.println("Lord Valon!");
                 System.out.println("");
-                hawkeye.attack1 = 6;
-                hawkeye.defense1 = 0;
-                hawkeye.health1 = 19;
-                hawkeye.calculateWinner();
+                valonVillain =  new Villain(6,0,19);
+                bat.calculateWinner(hawkeye, valonVillain);
             }else if(match == 2){
                 System.out.println("Prince Zersious!");
                 System.out.println("");
-                hawkeye.attack1 = 5;
-                hawkeye.defense1 = 2;
-                hawkeye.health1 = 18;
-                hawkeye.calculateWinner();
+                zersiousVillain = new Villain(5,2,18);
+                bat.calculateWinner(hawkeye, zersiousVillain);
             }else if(match == 3){
                 System.out.println("Balrock!");
                 System.out.println("");
-                hawkeye.attack1 = 10;
-                hawkeye.defense1 = 0;
-                hawkeye.health1= 15;
-                hawkeye.calculateWinner();
+                balrockVillain = new Villain(10,0,15);
+                bat.calculateWinner(hawkeye, balrockVillain);
             }else if(match == 4){
                 System.out.println("Rintar!");
                 System.out.println("");
-                hawkeye.attack1 = 8;
-                hawkeye.defense1 = 1;
-                hawkeye.health1 = 16;
-                hawkeye.calculateWinner();
+                rintarVillain = new Villain(8,1,16);
+                bat.calculateWinner(hawkeye, rintarVillain);
             }else if(match == 5){
                 System.out.println("Yusef!");
                 System.out.println("");
-                hawkeye.attack1 = 13;
-                hawkeye.defense1 = 2;
-                hawkeye.health1 = 10;
-                hawkeye.calculateWinner();}
+                yusefVillain =  new Villain(13,2,10);
+                bat.calculateWinner(hawkeye, yusefVillain);}
             System.out.println("");
             System.out.println("Fight again?");
             System.out.println("1 for Yes");
@@ -330,38 +264,28 @@ public static void main(String[] args) {
             if(match == 1){
                 System.out.println("Lord Valon!");
                 System.out.println("");
-                yusef.attack1 = 6;
-                yusef.defense1 = 0;
-                yusef.health1 = 19;
-                yusef.calculateWinner();
+                valonVillain =  new Villain(6,0,19);
+                bat.calculateWinner(yusef, valonVillain);
             }else if(match == 2){
                 System.out.println("Prince Zersious!");
                 System.out.println("");
-                yusef.attack1 = 5;
-                yusef.defense1 = 2;
-                yusef.health1 = 18;
-                yusef.calculateWinner();
+                zersiousVillain = new Villain(5,2,18);
+                bat.calculateWinner(yusef, zersiousVillain);
             }else if(match == 3){
                 System.out.println("Balrock!");
                 System.out.println("");
-                yusef.attack1 = 10;
-                yusef.defense1 = 0;
-                yusef.health1 = 15;
-                yusef.calculateWinner();
+                balrockVillain = new Villain(10,0,15);
+                bat.calculateWinner(yusef, balrockVillain);
             }else if(match == 4){
                 System.out.println("Rintar!");
                 System.out.println("");
-                yusef.attack1 = 8;
-                yusef.defense1 = 1;
-                yusef.health1 = 16;
-                yusef.calculateWinner();
+                rintarVillain = new Villain(8,1,16);
+                bat.calculateWinner(yusef, rintarVillain);
             }else if(match == 5){
                 System.out.println("Hawkeye!");
                 System.out.println("");
-                yusef.attack1 = 13;
-                yusef.defense1 = 2;
-                yusef.health1 = 10;
-                yusef.calculateWinner();}
+                hawkeyeVillain = new Villain(7,1,17);
+                bat.calculateWinner(yusef, hawkeyeVillain);}
             System.out.println("");
             System.out.println("Fight again?");
             System.out.println("1 for Yes");
