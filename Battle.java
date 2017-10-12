@@ -24,13 +24,13 @@ public String calculateWinner(Hero hero, Villain vil){
         System.out.println("Your Health");
         System.out.println(heroHealth);
         if(villainHealth > 0 && heroHealth > 0){
-        	function1(2, hero,vil);
+        	continueFight(2, hero,vil);
             if(villainHealth > 0 && heroHealth > 0){
-            	function1(3, hero,vil);
+            	continueFight(3, hero,vil);
                 if(villainHealth > 0 && heroHealth > 0){
-                	function1(4, hero,vil);
+                	continueFight(4, hero,vil);
                         if(villainHealth > 0 && heroHealth > 0){
-                        	function1(5, hero,vil);}
+                        	continueFight(5, hero,vil);}
                         }
                         }
                         }
@@ -56,7 +56,7 @@ public boolean battleAgain(int restart) throws IllegalArgumentException{
 }
 	throw new IllegalArgumentException ("wrong value chosen");
                 }
-public int function1(int multiplier, Hero hero, Villain vil) {
+public int continueFight(int multiplier, Hero hero, Villain vil) {
     outcome = hero.attack - vil.defense;
     outcome1 = multiplier * outcome;
     villainHealth = vil.health - outcome1;
