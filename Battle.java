@@ -56,7 +56,7 @@ public boolean battleAgain(int restart) throws IllegalArgumentException{
 }
 	throw new IllegalArgumentException ("wrong value chosen");
                 }
-int continueFight(int multiplier, Hero hero, Villain vil) {
+public int continueFight(int multiplier, Hero hero, Villain vil) {
     outcome = hero.attack - vil.defense;
     outcome1 = multiplier * outcome;
     villainHealth = vil.health - outcome1;
